@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  background-color: antiquewhite;
+  color: rgb(65, 64, 64);
+  text-align: center;
+}
+
+.booklist {
+  width: 90vm;
+  max-width: 1170;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.book {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.image {
+  width: 70%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: medium;
+}
+
+h3 {
+  background-color: red;
+  color: white;
+  font-family: fantasy;
+  letter-spacing: 1rem;
+}
